@@ -2,7 +2,8 @@
     "name": "NewBit Arcade Test 1 - Pins",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "light": "*"
     },
     "files": [
         "main.blocks",
