@@ -17,6 +17,7 @@ let mySprite = sprites.create(img`
     .............fffff..............
     `, SpriteKind.Player)
 mySprite.setStayInScreen(true)
+let strip = light.createStrip(pins.D2, 25)
 game.onUpdate(function () {
     controller.moveSprite(mySprite)
 })
