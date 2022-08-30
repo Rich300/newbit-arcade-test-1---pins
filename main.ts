@@ -1,3 +1,9 @@
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    pins.D2.digitalWrite(false)
+})
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    pins.D2.digitalWrite(true)
+})
 let mySprite = sprites.create(img`
     .............ccfff..............
     ...........ccddbcf..............
