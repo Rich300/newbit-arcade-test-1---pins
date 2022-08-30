@@ -3,8 +3,7 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "light": "*",
-        "feather": "*"
+        "light": "*"
     },
     "files": [
         "main.blocks",

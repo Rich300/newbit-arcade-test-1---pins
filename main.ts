@@ -1,8 +1,3 @@
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    strip.setAll(0xff0000)
-    strip.show()
-})
-let strip: light.NeoPixelStrip = null
 let mySprite = sprites.create(img`
     .............ccfff..............
     ...........ccddbcf..............
@@ -22,10 +17,6 @@ let mySprite = sprites.create(img`
     .............fffff..............
     `, SpriteKind.Player)
 mySprite.setStayInScreen(true)
-strip = light.createStrip(pins.LED, 25)
-strip.setBrightness(32)
-strip.clear()
-strip.show()
 game.onUpdate(function () {
     controller.moveSprite(mySprite)
 })
